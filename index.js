@@ -17,7 +17,11 @@ window.onload = () => {
 const greetingFunc =  () => {
     let date = new Date();
     let hour = date.getHours();
-    if(hour>=0 && hour < 12){
+    if(hour >=0 && hour < 12){
        speakFunc("good morning sir, How can help you !") 
+    }else if(hour >=12 && hour < 16){
+        speakFunc("good afternoon sir, How can help you !")
+    }else{
+        speakFunc("good evening sir, How can help you !")
     }
 }
