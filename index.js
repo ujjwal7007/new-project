@@ -11,4 +11,13 @@ const speakFunc = (input) => {
 }
 window.onload = () => {
     //speakFunc("Hello just for code");
+    greetingFunc();
+}
+
+const greetingFunc =  () => {
+    let date = new Date();
+    let hour = date.getHours();
+    if(hour>=0 && hour < 12){
+       speakFunc("good morning sir, How can help you !") 
+    }
 }
